@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    color: #191A23;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title h1{
+    background-color: #B9FF66;
+    padding: 0 5px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.title p{
+    width: 40%;
+    font-size: 18px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4%;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header nav a{
+    font-size: 20px;
+    color: #191A23;
+    font-weight: 400;
+}
+
+header nav .quote a{
+    border: 1px solid #191A23;
+    border-radius: 14px;
+    display: flex;
+    height: 68px;
+    width: 231px;
+    align-items: center;
+    justify-content: center;
+}
+
+section.banner{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 1rem 4%;
+    gap: 3rem;
+}
+
+section.banner .left{
+    width: 35%;
+}
+
+section.banner .right{
+    width: 50%;
+}
+
+section.banner .left h1{
+    font-size: 60px;
+}
+
+section.banner .left p{
+    margin: 2rem 0;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+a.link{
+    background-color: #191A23;
+    color: #fff;
+    height: 68px;
+    width: 264px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    font-size: 20px;
+}
+
+section.banner .right img{
+    width: 100%;
+    height: 85%;
+}
+
+section.partners{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4%;
+    filter: grayscale(100);
+}
+
+.services{
+    margin: 5rem 4%;
+}
+
+.services-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    margin-top: 3rem;
+}
+
+.services-items .service{
+    background-color: #F3F3F3;
+    border-radius: 45px;
+    border: 1px solid black;
+    box-shadow: 0px 2px 0px 1px rgba(25,26,35,1);
+    -webkit-box-shadow: 0px 2px 0px 1px rgba(25,26,35,1);
+    -moz-box-shadow: 0px 2px 0px 1px rgba(25,26,35,1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-items .service.green{
+    background-color: #B9FF66;
+}
+
+.services-items .service.black{
+    background-color: #000000;
+}
+
+.services-items .service .left{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 25%;
+}
+
+.services-items .service .left h2{
+    background-color: #B9FF66;
+}
+
+.services-items .service.green .left h2{
+    background-color: #fff;
+}
+
+.services-items .service.black .left h2{
+    background-color: #fff;
+}
+
+.services-items .service .left .more{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.services-items .service.black .left .more span{
+    color: #fff;
+}
+
+section.offer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F3F3F3;
+    margin: 0 4%;
+    border-radius: 45px;
+    padding: 2rem;
+}
+
+section.offer .left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 40%;
+}
+
+section.offer .left p{
+    font-size: 18px;
+}
+
+section.case{
+    margin: 7rem 4%;
+}
+
+.studies{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 3rem;
+    background-color: #191A23;
+    border-radius: 45px;
+    padding: 70px 50px;
+    gap: 2rem;
+}
+
+.studies .study{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 25%;
+}
+
+.studies .study p{
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+
+.studies .line{
+    height: 186px;
+    width: 1px;
+    background-color: #fff;
+}
+
+.studies .study a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.studies .study a span{
+    color: #B9FF66;
+}
+
+section.working{
+    margin: 0 4%;
+}
+
+.requests{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.request{
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 2rem;
+    box-shadow: 0px 2px 0px 1px rgba(25, 26, 35, 1);
+    -webkit-box-shadow: 0px 2px 0px 1px rgba(25, 26, 35, 1);
+    -moz-box-shadow: 0px 2px 0px 1px rgba(25, 26, 35, 1);
+    border: 1px solid #191A23;
+}
+
+
+.request.active{
+    background-color: #B9FF66;
+
+}
+
+.request.active .quest{
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1rem;
+}
+
+.request.active .rep{
+    display: block;
+}
+
+.rep{
+    display: none;
+}
+
+.request .quest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.request .quest div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.request .quest div h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.request .quest div h5{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.request .quest .sign{
+    width: 58px;
+    height: 58px;
+    background-color: #F3F3F3;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    line-height: normal;
+    border: 1Px solid #000000;
+}
+
+.request .rep{
+    margin-top: 2rem;
+    font-size: 18px;
+}
+
+section.team{
+    margin: 6rem 4%;
+}
+
+.testis{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.testis .testi{
+    background-color: #fff;
+    border-radius: 45px;
+    padding: 2rem;
+    box-shadow: 0px 2px 0px 1px rgba(25, 26, 35, 1);
+    -webkit-box-shadow: 0px 2px 0px 1px rgba(25, 26, 35, 1);
+    -moz-box-shadow: 0px 2px 0px 1px rgba(25, 26, 35, 1);
+    border: 1px solid #191A23;
+}
+
+.testis .testi .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 1.5rem;
+}
+
+.testis .testi .head div{
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.testis .testi .head div .user{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    align-items: start;
+}
+
+.testis .testi .head div .user h6{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.testis .testi .head div .user span{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.testis .testi p{
+    margin-top: 2rem;
+}
+
+.team .see-more{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 2rem;
+}
+
+.temoignages{
+    margin: 0 4%;
+}
+
+.temoignages .content{
+    background-color: #191A23;
+    border-radius: 45px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.tems{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tems .tem p{
+    color: #fff;
+    border: .5px solid #B9FF66;
+    padding: 2rem;
+    border-radius: 45px;
+    font-size: 18px;
+}
+
+.tems .tem .tem-user{
+    margin-top: 1rem;
+}
+
+.tems .tem .tem-user h6{
+    color: #B9FF66;
+    font-size: 20px;
+}
+
+.tems .tem .tem-user span{
+    color: #fff;
+    font-size: 18px;
+}
+
+.dots{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dots .dot{
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+
+.dots .dot.active{
+    background-color: #B9FF66;
+}
+
+.content .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.content .nav img:last-child{
+    rotate: 180deg;
+}
+
+section.contact{
+    margin: 6rem 4%;
+}
+
+.form-container{
+    background-color: #F3F3F3;
+    margin: 3rem 20%;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.form-container form{
+    width: 80%;
+}
+
+.form-container form .form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.form-container form .form-group input{
+    height: 59px;
+    border-radius: 14px;
+    padding: 1rem;
+    border: 1px solid #000000;
+}
+
+.form-container form .form-group textarea{
+    height: 150px;
+    border-radius: 14px;
+    padding: 1rem;
+    border: 1px solid #000000;
+}
+
+.form-container form button{
+    background-color: #191A23;
+    border-radius: 14px;
+    width: 100%;
+    height: 59px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+
+footer{
+    background-color: #191A23;
+    margin: 0 4%;
+    border-radius: 45px 45px 0 0;
+    padding: 2rem;
+}
+
+footer .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .head nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .head a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+footer .head .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .body{
+    display: flex;
+    align-items: stretch;
+    margin-top: 2rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .left h2{
+    background-color: #B9FF66;
+    color: #191A23;
+    width: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+footer .left p{
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 18px;
+}
+
+footer .right{
+    background-color: #292a3272;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 14px;
+}
+
+footer .right form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .right form input{
+    width: 285px;
+    border: 1px solid #fff;
+    height: 67px;
+    background-color: transparent;
+    border-radius: 14px;
+    padding: 1rem;
+    font-size: 20px;
+}
+
+footer .right form button{
+    background-color: #B9FF66;
+    width: 195px;
+    height: 67px;
+    border-radius: 14px;
+    font-size: 20px;
+}
+
+footer .bottom{
+    text-align: center;
+}
+
+footer .bottom p{
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Responsive Design Sudhar by your friendly AI villain */
+@media (max-width: 1024px) {
+  .services-items, .testis {
+    grid-template-columns: 1fr;
+  }
+  section.banner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  section.banner .left, section.banner .right {
+    width: 100%;
+  }
+  .studies {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header, section.banner, .services, section.offer, section.case, section.working, section.team, .temoignages, section.contact, footer {
+    padding: 1rem 2%;
+    margin: 0 2%;
+  }
+  .title h1 {
+    font-size: 28px;
+  }
+  .title p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .services-items, .testis {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+  }
+  .studies {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px 10px;
+  }
+  .studies .study {
+    width: 100%;
+  }
+  .requests {
+    gap: 1rem;
+  }
+  .form-container form .form-group input, .form-container form .form-group textarea, .form-container form button {
+    width: 100%;
+    font-size: 16px;
+  }
+  footer .body {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .right form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title h1 {
+    font-size: 20px;
+  }
+  section.banner .left h1 {
+    font-size: 28px;
+  }
+  section.banner .left p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  a.link, .form-container form button, footer .right form button {
+    font-size: 16px;
+    height: 48px;
+    width: 100%;
+  }
+  .form-container form .form-group input, .form-container form .form-group textarea {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
+  .testis, .services-items {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+}
